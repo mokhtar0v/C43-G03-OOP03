@@ -19,6 +19,14 @@ namespace Sesstion3_OOP.Operator_Overload
                 imaginary = (left?.imaginary ?? 0) + (right?.imaginary ?? 0)
             };
         }
+        public static Complex operator ++ (Complex c)
+        {
+            return new Complex
+            {
+                real = (c?.real ?? 0) + 1,
+                imaginary = c?.imaginary ?? 0
+            };
+        }
         public override string ToString()
         {
             return $"{real} + {imaginary}i";

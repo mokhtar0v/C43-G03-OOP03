@@ -24,7 +24,7 @@ namespace Sesstion3_OOP
             Console.WriteLine(obj);
             #endregion
 
-            #region Operator 
+            #region Operator Overload
             //Operator Overload must be a non-private class member function
             Complex c1 = new Complex() { real = 1, imaginary = 2 };
             Complex c2 = new Complex() { real = 3, imaginary = 4 };
@@ -33,6 +33,8 @@ namespace Sesstion3_OOP
             c3 = c1 + c2;
             c2 += c1;
             Console.WriteLine(c3);
+            c1++;
+            Console.WriteLine(c1);  
             #endregion
         }
     }
