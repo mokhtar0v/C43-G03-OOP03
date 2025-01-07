@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Assignment.Part1;
+using Assignment.Part2;
+using System;
 namespace Assignment
 {
     internal class Program
@@ -43,6 +45,28 @@ namespace Assignment
             #endregion
 
             #endregion
+
+            #region Part2
+            Duration D1 = new Duration(1, 10, 15);
+            Console.WriteLine(D1);
+            Duration D2 = new Duration(3600);
+            Console.WriteLine(D2);
+            Duration D3 = new Duration(7800);
+            Console.WriteLine(D3);
+            Duration D4 = new Duration(666);
+            Console.WriteLine(D4);
+            Console.WriteLine(D2+D1);
+            Console.WriteLine(D1+7800);
+            Console.WriteLine(666+D2);
+            Console.WriteLine(++D3);
+            Console.WriteLine(--D4);
+            Console.WriteLine(D3 - D4);
+            if (D1 > D2) Console.WriteLine("D1 is bigger");
+            if (D4 <= D3) Console.WriteLine("True");
+            if (D1) Console.WriteLine("True");
+            DateTime obj = (DateTime)D1;
+            #endregion
+
         }
 
     }

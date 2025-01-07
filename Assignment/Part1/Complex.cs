@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assignment
+namespace Assignment.Part1
 {
     internal class Complex
     {
-        public int real {  get; set; }
+        public int real { get; set; }
         public int imaginary { get; set; }
 
         public static Complex operator +(Complex left, Complex right)
