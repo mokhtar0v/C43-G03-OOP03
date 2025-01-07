@@ -33,10 +33,27 @@ namespace Sesstion3_OOP
             c3 = c1 + c2;
             c2 += c1;
             Console.WriteLine(c3);
+            ///
             c1++;
             Console.WriteLine(c1);
-            if (c1 < c2) Console.WriteLine($"c1 is bigger than c2");
+            ///
+            if (c1 > c2) Console.WriteLine($"c1 is bigger than c2");
             else Console.WriteLine($"c1 is not bigger than c2");
+            ///
+            Complex c4 = new Complex() { real = 1,imaginary = 2 };
+            int y = (int)c4;
+            Console.WriteLine(y);
+            ///
+            User user = new User()
+            {
+                Id = 12345,
+                FullName = "Ahmed Ali",
+                Email = "example@gmail.com",
+                Password = "12345678",
+                SecuirityStmp = Guid.NewGuid()
+            };
+            //mapping
+            UserViewModel userviewmodel = (UserViewModel) user;
             #endregion
         }
     }

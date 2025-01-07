@@ -21,6 +21,7 @@ namespace Sesstion3_OOP.Operator_Overload
             };
         } 
         #endregion
+
         #region Unary Operators
         public static Complex operator ++(Complex c)
         {
@@ -31,6 +32,7 @@ namespace Sesstion3_OOP.Operator_Overload
             };
         } 
         #endregion
+
         #region Relational Operators
         public static bool operator >(Complex left, Complex right)
         {
@@ -41,7 +43,14 @@ namespace Sesstion3_OOP.Operator_Overload
         {
             if (left?.real == right?.real) return left?.imaginary < right?.imaginary;
             else return left?.real < right?.real;
-        } 
+        }
+        #endregion
+
+        #region Casting Operator Overloading
+        public static explicit operator int(Complex c)
+        {
+            return c?.real ?? 0;
+        }
         #endregion
         public override string ToString()
         {
