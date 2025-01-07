@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using Sesstion3_OOP.Operator_Overload;
+using System.ComponentModel;
 
 namespace Sesstion3_OOP
 {
@@ -18,9 +19,20 @@ namespace Sesstion3_OOP
         }
         static void Main(string[] args)
         {
-            #region Overloading
+            #region Function Overloading
             dynamic obj = sumnum(1, 2);
             Console.WriteLine(obj);
+            #endregion
+
+            #region Operator 
+            //Operator Overload must be a non-private class member function
+            Complex c1 = new Complex() { real = 1, imaginary = 2 };
+            Complex c2 = new Complex() { real = 3, imaginary = 4 };
+            Complex c3 = default; //null
+
+            c3 = c1 + c2;
+            c2 += c1;
+            Console.WriteLine(c3);
             #endregion
         }
     }
