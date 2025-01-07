@@ -34,7 +34,9 @@ namespace Sesstion3_OOP
             c2 += c1;
             Console.WriteLine(c3);
             c1++;
-            Console.WriteLine(c1);  
+            Console.WriteLine(c1);
+            if (c1 < c2) Console.WriteLine($"c1 is bigger than c2");
+            else Console.WriteLine($"c1 is not bigger than c2");
             #endregion
         }
     }
