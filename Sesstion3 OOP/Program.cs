@@ -55,6 +55,16 @@ namespace Sesstion3_OOP
             //mapping
             UserViewModel userviewmodel = (UserViewModel) user;
             #endregion
+
+            #region Binding
+            /// 1. Static binding
+            /// 2. Dynamic binding
+            /// Reference from parent = object from chikd
+            /// 
+            
+
+            
+            #endregion
         }
     }
 }
